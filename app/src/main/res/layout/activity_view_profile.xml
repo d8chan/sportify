@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/profile_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <!-- API found on the internet. It allows you to round the corners of imageViews -->
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_picture"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="12dip"
+                app:riv_border_width="5dip"
+                app:riv_border_color="@color/colorPrimary"
+                android:layout_width="200dp"
+                android:layout_height="175dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:inputType="text|textMultiLine"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:maxLines="4"
+                    android:minLines="1" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/edit_save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:minWidth="100dp"
+                    android:text="@string/save"
+                    android:theme="@style/AppTheme.Button.Colored"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|left"
+            android:text="Bio:"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:id="@+id/bio_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Write a short description of yourself."
+            android:maxLines="14"
+            android:minLines="1" />
+
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact:"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:id="@+id/contact_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimaryText"
+            android:text="How would you like people to contact you?"
+            android:minLines="1"
+            android:maxLines="14" />
+
+        <TextView
+            android:id="@+id/availability_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability:"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TableLayout
+            android:id="@+id/availability_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="5dp"
+                    android:text="Sun"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:paddingRight="5dp"
+                    android:text="Mon"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="right" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:paddingRight="5dp"
+                    android:text="Tue"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:paddingRight="5dp"
+                    android:text="Wed"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:paddingRight="5dp"
+                    android:text="Thu"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="7"
+                    android:paddingRight="5dp"
+                    android:text="Fri"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="8"
+                    android:paddingRight="5dp"
+                    android:text="Sat"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_gravity="center"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="@string/morning" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sun_morning"
+                    android:layout_column="2"
+                    android:background="#00000000" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/mon_morning"
+                    android:layout_column="3"
+                    android:background="#00000000" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/tue_morning"
+                    android:layout_column="4" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/wed_morning"
+                    android:layout_column="5"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/thu_morning"
+                    android:layout_column="6"
+                     />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/fri_morning"
+                    android:layout_column="7"
+                     />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sat_morning"
+                    android:layout_column="8"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000">
+
+                <TextView
+                    android:id="@+id/afternoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="@string/afternoon"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sun_afternoon"
+                    android:layout_column="2" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/mon_afternoon"
+                    android:layout_column="3"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/tue_afternoon"
+                    android:layout_column="4" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/wed_afternoon"
+                    android:layout_column="5"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/thu_afternoon"
+                    android:layout_column="6" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/fri_afternoon"
+                    android:layout_column="7"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sat_afternoon"
+                    android:layout_column="8" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="@string/evening"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sun_evening"
+                    android:layout_column="2" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/mon_evening"
+                    android:layout_column="3"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/tue_evening"
+                    android:layout_column="4" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/wed_evening"
+                    android:layout_column="5"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/thu_evening"
+                    android:layout_column="6"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/fri_evening"
+                    android:layout_column="7"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sat_evening"
+                    android:layout_column="8"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:text="@string/night"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sun_night"
+                    android:layout_column="2"/>
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/mon_night"
+                    android:layout_column="3" />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/tue_night"
+                    android:layout_column="4"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/wed_night"
+                    android:layout_column="5"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/thu_night"
+                    android:layout_column="6"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/fri_night"
+
+                    android:layout_column="7"
+                    />
+
+                <ImageView
+                    style="@style/CalendarBox"
+                    android:id="@+id/sat_night"
+                    android:layout_column="8" />
+            </TableRow>
+
+        </TableLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimaryText"
+                android:foregroundGravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/add_sport"
+                android:foregroundGravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/sports"
+                android:layout_toEndOf="@+id/sports"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_add_circle_black_24px"
+                android:tint="@color/colorPrimary"
+                android:tintMode="src_atop"
+                android:background="#00000000" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/no_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:text="This person has no sports profiles"/>
+
+    </LinearLayout>
+
+</FrameLayout>

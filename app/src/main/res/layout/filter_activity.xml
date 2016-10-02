@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <!--First line of switches-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:weightSum="1">
+
+        <!--Match Schedule-->
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_schedule"
+            android:textColor="@color/white"
+            android:id="@+id/event_match_schedule"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:layout_weight="0.5"
+            android:theme="@style/SwitchCompatTheme"/>
+
+        <!--Closed Events-->
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/closed_events"
+            android:textColor="@color/white"
+            android:id="@+id/event_access_specifier"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:layout_weight="0.5"
+            android:theme="@style/SwitchCompatTheme"/>
+
+    </LinearLayout>
+
+    <!--Second line of switches-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:weightSum="1">
+
+        <!--Expand All-->
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expand_all"
+            android:textColor="@color/white"
+            android:id="@+id/expand_all"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:layout_weight="0.5"
+            android:theme="@style/SwitchCompatTheme"/>
+
+        <!--Select All-->
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_all"
+            android:textColor="@color/white"
+            android:id="@+id/select_all"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:layout_weight="0.5"
+            android:theme="@style/SwitchCompatTheme"/>
+
+    </LinearLayout>
+
+    <!--Line of checkboxes-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <!--Beginner-->
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beginner"
+            android:textColor="@color/white"
+            android:id="@+id/begginerCheckBox"
+            app:buttonTint="@color/white"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+        <!--Intermediate-->
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intermediate"
+            android:textColor="@color/white"
+            android:id="@+id/IntermediateCheckBox"
+            app:buttonTint="@color/white"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+        <!--Advanced-->
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced"
+            android:textColor="@color/white"
+            android:id="@+id/AdvancedCheckBox"
+            app:buttonTint="@color/white"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <!--Holds all sports and buttons-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Holds all sports-->
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:id="@+id/expandableList"
+            android:childDivider="@color/colorPrimary"
+            android:divider="#ffff"
+            android:dividerHeight="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:layout_above="@+id/linearLayout"/>
+
+        <!--Buttons-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout">
+
+            <!--Save-->
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:id="@+id/saveButton"
+                android:layout_weight="0.5"
+                android:theme="@style/AppTheme.Button"/>
+                <!--android:background="#ffff"/>-->
+
+            <!--Cancel-->
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:id="@+id/cancelButton"
+                android:layout_weight="0.5"
+                android:theme="@style/AppTheme.Button"/>
+                <!--android:background="#ffff"/>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

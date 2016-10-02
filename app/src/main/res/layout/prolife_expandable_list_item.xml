@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Skill Level:"
+            android:id="@+id/skill_lv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:text="New Text"
+            android:id="@+id/skill_lv_text" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/skill_lv_spinner"
+            android:popupBackground="#ffffff" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/bio"
+        android:id="@+id/sport_bio"
+        android:textColor="@color/colorPrimaryText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sport_bio_content"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimaryText"
+        android:text="@string/sports_bio"
+        android:maxLines="14"
+        android:minLines="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:minWidth="100dp"
+        android:text="@string/delete_sport"
+        android:id="@+id/delete_sport_button"
+        android:background="@drawable/profile_button"
+        android:textColor="@color/colorPrimaryTextInverse"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textSize="15dp"
+        />
+
+</LinearLayout>

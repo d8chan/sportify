@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:orderInCategory="100"
+        android:title="@string/profile"
+        app:showAsAction="never"
+        android:id="@+id/profile"/>
+
+    <item
+        android:orderInCategory="100"
+        android:title="@string/active"
+        app:showAsAction="never"
+        android:id="@+id/active"/>
+
+
+    <item
+        android:orderInCategory="100"
+        android:title="@string/home"
+        app:showAsAction="never"
+        android:id="@+id/home"/>
+
+    <item
+        android:orderInCategory="100"
+        android:title="@string/log_out"
+        app:showAsAction="never"
+        android:id="@+id/log_out"/>
+</menu>

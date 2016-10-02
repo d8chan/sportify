@@ -1,0 +1,206 @@
+<resources>
+    <string name="action_settings">something</string>
+    <string name="app_name">Sportify</string>
+    <string name="gathering_title_label">Title</string>
+    <string name="gathering_title_hint">Event name</string>
+    <string name="gathering_description_hint">Description</string>
+    <string name="private_checkbox_label">Closed</string>
+
+    <string name="title_activity_view_profile">Profile</string>
+    <string name="title_activity_forgot_pwd">Forgot Password</string>
+    <string name="title_activity_change_pwd">Change Password</string>
+
+    <string name="calendar">Calendar</string>
+    <string name="description_hint">\"Enter a description</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_time">Enter a time</string>
+    <string name="log_out">Log Out</string>
+    <string name="home">Find Events</string>
+    <string name="profile">Profile</string>
+    <string name="active">My Events</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_add">Add</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="email">Email</string>
+    <string name="email_password">Send Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_pwd_hint">New Password</string>
+    <string name="re_pwd_hint">Confirm Password</string>
+    <string name="msg_failed_to_get_intent_data">No image selected</string>
+    <string name="events">Find Events</string>
+    <string name="my_events">My Events</string>
+    <string name="filter">Filter</string>
+    <string-array name="skill_lv_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="sport_types">
+        <item>AEROBATICS</item>
+        <item>AIKIDO</item>
+        <item>AIR RACING</item>
+        <item>ARTISTIC CYCLING</item>
+        <item>BASE JUMPING</item>
+        <item>BMX</item>
+        <item>BACKPACKING</item>
+        <item>BADMINTON</item>
+        <item>BALL BADMINTON</item>
+        <item>BANZAI SKYDIVING</item>
+        <item>BASEBALL</item>
+        <item>BASKETBALL</item>
+        <item>BIRIBOL</item>
+        <item>BODYBOARDING</item>
+        <item>BOKATOR</item>
+        <item>BOSSABALL</item>
+        <item>BOXING</item>
+        <item>BRAZILIAN JIU-JITSU</item>
+        <item>CAPOEIRA</item>
+        <item>CHOI KWANG-DO</item>
+        <item>COCKFIGHTING</item>
+        <item>CRICKET</item>
+        <item>CROSS-COUNTRY MOUNTAIN BIKING</item>
+        <item>CYCLE POLO</item>
+        <item>CYCLE SPEEDWAY</item>
+        <item>CYCLO-CROSS</item>
+        <item>DIRT JUMPING</item>
+        <item>DODGEBALL</item>
+        <item>DOWNHILL MOUNTAIN BIKING</item>
+        <item>FIELD ARCHERY</item>
+        <item>FISHING</item>
+        <item>FISTBALL</item>
+        <item>FLIGHT ARCHERY</item>
+        <item>FLY FISHING</item>
+        <item>FOOTBAG NET</item>
+        <item>FOOTBALL</item>
+        <item>FREESTYLE BMX</item>
+        <item>FUJIAN WHITE CRANE</item>
+        <item>GLIDING</item>
+        <item>GUNGDO</item>
+        <item>HANG GLIDING</item>
+        <item>HAPKIDO</item>
+        <item>HARDCOURT BIKE POLO</item>
+        <item>HIKING</item>
+        <item>HOCKEY</item>
+        <item>HOOVERBALL</item>
+        <item>HUMAN POWERED AIRCRAFT</item>
+        <item>HUNTING</item>
+        <item>INDOOR ARCHERY</item>
+        <item>JEET KUNE DO</item>
+        <item>JUDO</item>
+        <item>KARATE</item>
+        <item>KAYAKING</item>
+        <item>KENPŌ</item>
+        <item>KICKBOXING</item>
+        <item>KRAV MAGA</item>
+        <item>KUNG FU</item>
+        <item>KYŪDŌ</item>
+        <item>LETHWEI</item>
+        <item>MODEL AIRCRAFT</item>
+        <item>MOUNTAIN UNICYCLING</item>
+        <item>MUAY THAI</item>
+        <item>NINJUTSU</item>
+        <item>PARACHUTING</item>
+        <item>PARAGLIDING</item>
+        <item>PARAMOTORING</item>
+        <item>PETECA</item>
+        <item>PICKLEBALL</item>
+        <item>PLATFORM TENNIS</item>
+        <item>POCKET BILLIARDS</item>
+        <item>POPINJAY</item>
+        <item>POWERED HANG GLIDER</item>
+        <item>POWERED PARAGLIDING</item>
+        <item>PRADAL SEREY</item>
+        <item>RACQUETBALL</item>
+        <item>RIVERBOARDING</item>
+        <item>ROAD BICYCLE RACING</item>
+        <item>ROCK CLIMBING</item>
+        <item>ROPE JUMPING</item>
+        <item>RUGBY</item>
+        <item>RUNNING</item>
+        <item>SAMBO</item>
+        <item>SAN SHOU</item>
+        <item>SAVATE</item>
+        <item>SCUBA DIVING</item>
+        <item>SEPAK TAKRAW</item>
+        <item>SHAOLIN KUNG FU</item>
+        <item>SIKARAN</item>
+        <item>SILAT</item>
+        <item>SIPA</item>
+        <item>SKATEBOARDING</item>
+        <item>SKIING</item>
+        <item>SKIMBOARDING</item>
+        <item>SKYDIVING</item>
+        <item>SKYSURFING</item>
+        <item>SNOWBOARDING</item>
+        <item>SOCCER</item>
+        <item>STREETBALL</item>
+        <item>STREETLUGE</item>
+        <item>SUBAK</item>
+        <item>SUMO</item>
+        <item>TAEKKYEON</item>
+        <item>TAEKWONDO</item>
+        <item>TAIDO</item>
+        <item>TANG SOO DO</item>
+        <item>TARGET ARCHERY</item>
+        <item>TENNIS</item>
+        <item>THROWBALL</item>
+        <item>TRACK CYCLING</item>
+        <item>ULTRALIGHT AVIATION</item>
+        <item>UNDERWATER CYCLING</item>
+        <item>UNICYCLE BASKETBALL</item>
+        <item>UNICYCLE HOCKEY</item>
+        <item>UNICYCLE TRIALS</item>
+        <item>UNICYCLING</item>
+        <item>VOLLEYBALL</item>
+        <item>WAKEBOARDING</item>
+        <item>WAKESURFING</item>
+        <item>Walking</item>
+        <item>WATER BASKETBALL</item>
+        <item>WATER POLO</item>
+        <item>WEIGHTLIFTING</item>
+        <item>WHEELCHAIR BASKETBALL</item>
+        <item>WHITE WATER RAFTING</item>
+        <item>WINDSURFING</item>
+        <item>WING CHUN</item>
+        <item>WINGSUIT FLYING</item>
+        <item>WRESTLING</item>
+        <item>ZUI QUAN</item>
+
+    </string-array>
+    <string name="no_sports">No Sports To Add</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="save">Save</string>
+    <string name="public_event">Public</string>
+    <string name="closed_event">Closed</string>
+    <string name="bullet">•</string>
+    <string name="host">Host</string>
+    <string name="sport">Sport</string>
+    <string name="skill_level">Skill Level</string>
+    <string name="date">Date</string>
+    <string name="at">at</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="description_title">Description:</string>
+    <string name="description">Description</string>
+    <string name="view_players">View Players</string>
+    <string name="join">Join</string>
+    <string name="edit">Edit</string>
+    <string name="requests">Requests</string>
+    <string name="match_schedule">Match Schedule</string>
+    <string name="closed_events">Closed Events</string>
+    <string name="expand_all">Expand All</string>
+    <string name="select_all">Select All</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_sport">Delete Sport</string>
+    <string name="sports_bio">This is a sports bio</string>
+    <string name="bio">Bio:</string>
+    <string name="sport_title">Text</string>
+
+</resources>

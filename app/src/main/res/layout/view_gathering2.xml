@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Linear Layout to encapsulate all the elements within the scroll view-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="start">
+              <!--android:weightSum="1"-->
+
+    <!--Make the view scrollable-->
+    <ScrollView
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:layout_above="@+id/linearLayout2"
+        android:fillViewport="false">
+        <LinearLayout
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="start">
+            <!--Activity Title-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/gathering_title_label"
+                android:id="@+id/gathering_title"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:paddingTop="20dp"/>
+
+            <!--Activity Subtitles-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingBottom="20dp">
+
+                <!--Public/Private-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/public_event"
+                    android:id="@+id/public_or_private"/>
+
+                <!--Bullet-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/bullet"
+                    android:id="@+id/bullet"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+                <!--Host-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/host"
+                    android:id="@+id/host_variable"/>
+            </LinearLayout>
+
+            <!--Label for sport being played-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sport"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/sport_variable"/>
+
+            <!--Skill Level subtitle-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/skill_level"
+                android:id="@+id/skill_level_variable" />
+
+            <!--Date and Time-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <!--Date-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/date"
+                    android:id="@+id/date_variable"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/at"
+                    android:id="@+id/at"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"/>
+
+                <!--Time-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/time"
+                    android:id="@+id/time_variable"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+            <!--Location-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/location"
+                android:id="@+id/location_variable"/>
+
+            <!--Description Label-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/description_title"
+                android:id="@+id/description_title"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+            <!--Description Field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/description"
+                android:id="@+id/description_variable"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Holds all the buttons at the bottom-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+
+        <!--First Row of buttons-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/view_players_row">
+
+            <!--View Players-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/view_players_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:minWidth="120dp"
+                android:text="@string/view_players"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button.Colored"/>
+
+            <!--Options Button (Dynamically Changes)-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/request_join_leave_delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:minWidth="75dp"
+                android:text="@string/join"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button.Colored"/>
+        </LinearLayout>
+
+        <!--Second Row of buttons-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <!--Edit-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/edit_gathering_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:minWidth="75dp"
+                android:text="@string/edit"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button.Colored"/>
+
+            <!--Pending and Attending (Dynamically changes)-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/view_pending_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:minWidth="120dp"
+                android:text="@string/requests"
+                android:layout_weight="1"
+                android:theme="@style/AppTheme.Button.Colored"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

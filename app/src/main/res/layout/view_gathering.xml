@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gathering_title"
+        android:hint="@string/gathering_title_hint"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:text="title"
+        android:layout_weight="0.19" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gathering_description"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter a description"
+        android:inputType="textMultiLine"
+        android:text="description"
+        android:layout_weight="0.17" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_location"
+        android:inputType="textMultiLine"
+        android:text="location"
+        android:layout_weight="0.08"
+        android:id="@+id/gathering_location" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gathering_time"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_time"
+        android:inputType="textMultiLine"
+        android:text="time"
+        android:layout_weight="0.11" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gathering_host"
+        android:layout_gravity="center_horizontal"
+        android:text="host"
+        android:layout_weight="0.08" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/host_display"
+            android:layout_gravity="left|top" />
+
+        <EditText
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/attendees_display"
+            android:layout_gravity="right|center_vertical" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/gathering_edit"
+            android:layout_weight="0.19"
+            android:layout_gravity="left|top" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/gathering_delete"
+            android:background="@drawable/delete_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|top" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Pending Requests"
+        android:id="@+id/accept_pending"
+        android:layout_gravity="right"
+        android:layout_weight="0.19" />
+
+</LinearLayout>

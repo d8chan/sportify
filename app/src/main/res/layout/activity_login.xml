@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="@drawable/minimal_grass_dark"
+    android:weightSum="1">
+
+        <!-- logo goes here -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/sportify_logo" />
+
+        <!-- Email Label -->
+
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-medium"
+            android:drawableLeft="@drawable/email_grey_24x24"
+            android:drawablePadding="8sp"
+            android:hint="Email"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/textColorLogin"/>
+
+
+        <!-- Password Label -->
+        <EditText android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-medium"
+            android:drawableLeft="@drawable/lock_grey_24x24"
+            android:drawablePadding="8sp"
+            android:hint="Password"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/textColorLogin"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:text="LOGIN"
+            android:background="@drawable/buttonshape"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+            <!--android:layout_weight="0.17"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="25dp"/>-->
+
+        <TextView android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign up"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/textColorLogin" />
+
+        <TextView
+            android:id="@+id/link_forgot_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/forgot_pwd"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/textColorLogin" />
+</LinearLayout>
